@@ -1,0 +1,34 @@
+.grid-container {
+  box-sizing: border-box;
+  padding: 16px; /* Padding acts as a border */
+  background-color: black; /* Color of the border */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2px;
+  background-color: black;
+  width: calc(100vw - 32px); /* Adjust width for the border */
+  height: calc(
+    100vh - 32px - 100px
+  ); /* Adjust height for the border and button section */
+}
+
+.grid-cell {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button-section {
+  margin: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 20px;
+}
